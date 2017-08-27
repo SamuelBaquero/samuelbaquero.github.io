@@ -1,0 +1,104 @@
+
+
+/* Images */
+.profile-pick{
+
+}
+
+.skills-show{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.img-code{
+	background-image: url(../img/blackCode.png);
+	background-size: cover;
+}
+
+.img-hobbies{
+	background-image: url("../img/hobbies.png");
+	background-size: cover;
+}
+
+.img-studies{
+	background-image: url("../img/studies.png");
+	background-size: cover;
+}
+
+/*Turning image classes*/
+.t-item{
+	display: inline-block;
+	padding:10px;
+	height:200px;
+	width:200px;
+	position:relative;
+	border-radius: 50%;
+	background-color: blue;
+}
+
+.t-wrap{
+	perspective: 800px;
+	transition: all 0.4s ease-in-out;
+}
+
+.t-info{
+	height:180px;
+	width:180px;
+	transition: all 0.4s ease-in-out;
+	transform-style: preserve-3d;
+}
+
+.t-info > div{
+	height:100%;
+	width:100%;
+	backface-visibility: hidden;
+	position:absolute;
+	background-position: center center;
+	border-radius: 50%;
+}
+
+.t-info-back{
+	display: table-cell;
+}
+
+.circled-text p{
+	color:gray;
+}
+
+.circled-text h4{
+	color:gray;
+}
+
+.t-info .t-info-back{
+	transform: rotate3d(0,1,0,180deg);
+	background-color: black;
+}
+
+.t-item:hover .t-info{
+	transform:rotate3d(0,1,0,-180deg);
+}
+
+.circled-text{
+	margin-top: 33%;
+	display: inline-block;
+}
+
+/* All images within a circle */
+.circle-image{
+	border-radius: 50%;
+	height: auto;
+}
+
+.header h1{
+	font-size: 9vmin;
+}
+
+.header h3{
+	font-size: 7vmin;
+}
+
+.small-image{
+	position: relative;
+	width: 10%;
+	background-color:black;
+}
