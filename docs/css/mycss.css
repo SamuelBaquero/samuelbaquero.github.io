@@ -10,6 +10,19 @@
 	flex-wrap: wrap;
 }
 
+.callout{
+	background-image: url(../img/projectsbg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	opacity: 1;
+	transition: 0.6s ease-in-out;
+}
+
+.callout:hover{
+	opacity: 0.9;
+}
+
 .img-code{
 	background-image: url(../img/blackCode.png);
 	background-size: cover;
@@ -25,6 +38,11 @@
 	background-size: cover;
 }
 
+.img-empty{
+	background-image: url("../img/studies.png");
+	background-size: cover;
+}
+
 /*Turning image classes*/
 .t-item{
 	display: inline-block;
@@ -33,7 +51,7 @@
 	width:200px;
 	position:relative;
 	border-radius: 50%;
-	background-color: blue;
+	background-color: #007bff;
 }
 
 .t-wrap{
@@ -101,4 +119,55 @@
 	position: relative;
 	width: 10%;
 	background-color:black;
+}
+
+.resume-row{
+	padding: 2% 4%;
+}
+
+.resume-row > p{
+	text-align: justify;
+}
+
+.resume-row > p, h3{
+	padding-left: 5%;
+	width:100%;
+}
+
+/*Black Circle Text Styles*/
+.row-title{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	color: white;
+	float: left;
+	background-color: black;
+	shape-outside: circle();
+	margin-right: 2rem;
+}
+.row-title h5{
+	margin-top: 40%;
+	font-size: 1.5rem;
+}
+
+.workexp-title{
+	width: 100%;
+}
+
+/*Company Grid*/
+.company-item{
+	width: 100%;
+	height: 20%;
+	border-top: solid;
+	margin: 5px;
+	padding: 10px;
+}
+
+.studies-item{
+	width:100%;
+	height: 20%;
+	border-top-color: black;
+	border-top: solid;
+	padding: 5px;
+	margin: 10px;
 }
