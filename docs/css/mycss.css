@@ -2,7 +2,13 @@
 
 /* Images */
 .profile-pick{
-
+	background-image: url(../img/ProfilePic.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: inline-block;
+	height: 200px !important;
+	width: 200px;
 }
 
 .skills-show{
@@ -35,6 +41,16 @@
 
 .img-studies{
 	background-image: url("../img/studies.png");
+	background-size: cover;
+}
+
+.img-mywebsite{
+	background-image: url("../img/myweb.png");
+	background-size: cover;
+}
+
+.img-webdesign{
+	background-image: url("../img/web-design.jpg");
 	background-size: cover;
 }
 
@@ -109,10 +125,13 @@
 
 .header h1{
 	font-size: 9vmin;
+	color: #FFF;
 }
 
 .header h3{
 	font-size: 7vmin;
+	color: #FFF;
+	padding:0px !important;
 }
 
 .small-image{
@@ -170,4 +189,64 @@
 	border-top: solid;
 	padding: 5px;
 	margin: 10px;
+}
+
+/*Portfolio Grid*/
+.portfolio-item{
+	border-width: 3px;
+	border-color: rgba(0, 123, 255, 1);
+	border-style: solid;
+
+	margin: 10px 0px;
+
+	min-width: 200px;
+    min-height: 200px;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+
+}
+
+
+/*Dynamic squared image content*/
+.portfolio-item:hover .p-info{
+	transform: scale(1);
+	opacity: 0.8;
+	background-color: black;
+}
+
+.p-info{
+	transition: all 0.4s ease-in;
+	transform: scale(0);
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	padding-top: 16%;
+}
+
+.pintro:hover{
+	box-shadow: 
+		inset 0 0 0 1px rgba(255,255,255,0.1),
+		0 1px 2px rgba(0,0,0,0.1);
+	transition: all 0.4s ease-in;
+}
+
+.pintro{
+    box-shadow: 
+		inset 0 0 0 16px rgba(255,255,255,0.6),
+		0 1px 2px rgba(0,0,0,0.1);
+	transition: all 0.4s ease-in-out;
+	height: 100%;
+	width: 100%;
+}
+
+/*Footer*/
+.footer{
+	background-color: rgb(153, 202, 255);
+}
+
+.about{
+	position: fixed;
+	top: -($nav-height);
 }
