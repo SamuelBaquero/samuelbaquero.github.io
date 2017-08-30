@@ -1,5 +1,3 @@
-
-
 /* Images */
 .profile-pick{
 	background-image: url(../img/ProfilePic.jpg);
@@ -197,14 +195,12 @@
 	border-color: rgba(0, 123, 255, 1);
 	border-style: solid;
 
-	margin: 10px 0px;
-
 	min-width: 200px;
     min-height: 200px;
     width: 100%;
     height: 100%;
     background-position: center;
-
+	
 }
 
 
@@ -233,6 +229,7 @@
 }
 
 .pintro{
+	background-position: center center;
     box-shadow: 
 		inset 0 0 0 16px rgba(255,255,255,0.6),
 		0 1px 2px rgba(0,0,0,0.1);
@@ -246,7 +243,24 @@
 	background-color: rgb(153, 202, 255);
 }
 
+/* Nav Bar */
+$nav-height: 3em;
 .about{
 	position: fixed;
 	top: -($nav-height);
+}
+
+
+/*Utils*/
+.padding10{
+	padding:10px;
+}
+
+.navbar-fixed{
+	position:fixed;
+	background-color:black;
+	opacity:0.8;
+	z-index: 100;
+	width: 100%;
+	height: 5%;
 }
