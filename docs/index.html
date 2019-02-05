@@ -16,30 +16,29 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- Custom CSS Template-->
-    <link href="template/css/stylish-portfolio.css" rel="stylesheet">
 
-	<!-- MY Css -->
-	<link href="css/mycss.css" rel="stylesheet">
+    <!-- MY Css -->
+    <link href="css/mycsssmall.css" rel="stylesheet" media="screen and (max-width: 890px)">
+    <link href="css/mycsslarge.css" rel="stylesheet" media="screen and (min-width: 891px)">
 
-	<!-- favicons -->
-	<link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="./img/favicons/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="./img/favicons/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
-	<link rel="manifest" href="./img/favicons/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="./img/favicons/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -57,18 +56,29 @@
         <div class="text-row">
             <h4 class="slightly-gray">I do <strong>Web Development</strong>, Back-end (my focus) and front-end.</h4>
         </div>
-        <div class="text-row">
-        	<h4>
-        		<strong>Interests</strong>
-        	</h4>
-            <p>Portable, scalable, <strong>responsive</strong> web apps. Currently studying towards big-data analysis using machine learning techniques applied to images and drone automatization.</p>
+        <div class="box-show-container">
+            <div class="interests-box box-show text-center">
+                <h4><strong>Interests</strong></h4>
+                <div>
+                    <div>Portable, scalable, <strong>responsive</strong> web apps</div>
+                    <div>Machine Learning applied to images</div>
+                    <div>Robotics and drone automatization</div>
+                </div> 
+            </div>
+            <div class="working-box box-show text-center">
+                <h4><strong>Working On</strong></h4>
+                <div>
+                    <div>Mobile Development</div>
+                    <div>Cross-Platform Robotics remote laboratory</div>
+                </div>
+            </div>
         </div>
-        <div class="skills-grid skills display">
+        <div class="skills-grid-small">
             <div class="item-grid-title text-box"><h4><strong>The tools I use</strong></h4></div>
             <div class="item-yellow big-java text-box"><h5><strong>Java</strong></h5></div>
             <div class="item-yellow small-spring text-box"><p>Spring</p></div>
-            <div class="item-yellow small-meteor text-box"><p>Meteorjs</p></div>
             <div class="item-yellow small-express text-box"><p>Expressjs</p></div>
+            <div class="item-blue small-meteor text-box"><p>Meteorjs</p></div>
             <div class="item-blue big-javascript text-box"><h5><strong>Javascript</strong></h5></div>
             <div class="item-blue small-html text-box"><p>HTML5</p></div>
             <div class="item-blue small-react text-box"><p>Reactjs</p></div>
@@ -79,6 +89,81 @@
             <div class="item-red big-nosql text-box"><h5><strong>NoSQL</strong></h5></div>
             <div class="item-red small-mongo text-box"><p>MongoDB</p></div>
             <div class="item-red small-firebase text-box"><p>Firebase</p></div>
+        </div>
+        <div class="skills-grid-large">
+            <div class="item-grid-title text-box"><h4><strong>The tools I use</strong></h4></div>
+            <div class="tres-java text-box">
+                <svg class="prog-ring" height="15vw" width="15vw">
+                    <circle class="prog-circle-tres" stroke="#00ff2bde" stroke-width="1vw" fill="#00ff2b47" r="6.5vw" cx="7.5vw" cy="7.5vw"/>
+                </svg>
+                <p><strong>Java</strong></p>
+            </div>
+            <div class="tres-javascript text-box">
+                <svg class="prog-ring" height="15vw" width="15vw">
+                    <circle class="prog-circle-tres" stroke="blue" stroke-width="1vw" fill="#002bff47" r="6.5vw" cx="7.5vw" cy="7.5vw"/>
+                </svg>
+                <p><strong>Javascript</strong></p>
+            </div>
+            <div class="dos-mongodb text-box">
+                <svg class="prog-ring" height="10vw" width="10vw">
+                    <circle class="prog-circle-dos" stroke="#00ff2bde" stroke-width="0.5vw" fill="#00ff2b47" r="4.6vw" cx="5vw" cy="5vw"/>
+                </svg>
+                <p><strong>MongoDB</strong></p>
+            </div>
+            <div class="uno-spring text-box">
+                <svg class="prog-ring" height="5vw" width="5vw">
+                    <circle class="prog-circle-uno" stroke="#00ff2bde" stroke-width="0.25vw" fill="#00ff2b47" r="2.3vw" cx="2.5vw" cy="2.5vw"/>
+                </svg>
+                <p>Spring</p>
+            </div>
+            <div class="dos-html text-box">
+                <svg class="prog-ring" height="10vw" width="10vw">
+                    <circle class="prog-circle-dos" stroke="blue" stroke-width="0.5vw" fill="#002bff47" r="4.6vw" cx="5vw" cy="5vw"/>
+                </svg>
+                <p><strong>HTML5</strong></p>
+            </div>
+            <div class="dos-css text-box">
+                <svg class="prog-ring" height="10vw" width="10vw">
+                    <circle class="prog-circle-dos" stroke="blue" stroke-width="0.5vw" fill="#002bff47" r="4.6vw" cx="5vw" cy="5vw"/>
+                </svg>
+                <p><strong>CSS</strong></p>
+            </div>
+            <div class="dos-oracle text-box">
+                <svg class="prog-ring" height="10vw" width="10vw">
+                    <circle class="prog-circle-dos" stroke="#00ff2bde" stroke-width="0.5vw" fill="#00ff2b47" r="4.6vw" cx="5vw" cy="5vw"/>
+                </svg>
+                <p>OracleDB</p>
+            </div>
+            <div class="dos-postgresql text-box">
+                <svg class="prog-ring" height="10vw" width="10vw">
+                    <circle class="prog-circle-dos" stroke="#00ff2bde" stroke-width="0.5vw" fill="#00ff2b47" r="4.6vw" cx="5vw" cy="5vw"/>
+                </svg>
+                <p>Postgresql</p>
+            </div>
+            <div class="dos-meteor text-box">
+                <svg class="prog-ring" height="10vw" width="10vw">
+                    <circle class="prog-circle-dos" stroke="red" stroke-width="0.5vw" fill="#ff000045" r="4.6vw" cx="5vw" cy="5vw"/>
+                </svg>
+                <p>Meteorjs</p>
+            </div>
+            <div class="dos-firebase text-box">
+                <svg class="prog-ring" height="10vw" width="10vw">
+                    <circle class="prog-circle-dos" stroke="red" stroke-width="0.5vw" fill="#ff000045" r="4.6vw" cx="5vw" cy="5vw"/>
+                </svg>
+                <p>Firebase</p>
+            </div>
+            <div class="dos-express text-box">
+                <svg class="prog-ring" height="10vw" width="10vw">
+                    <circle class="prog-circle-dos" stroke="red" stroke-width="0.5vw" fill="#ff000045" r="4.6vw" cx="5vw" cy="5vw"/>
+                </svg>
+                <p>Expressjs</p>
+            </div>
+            <div class="tres-react text-box">
+                <svg class="prog-ring" height="15vw" width="15vw">
+                    <circle class="prog-circle-tres" stroke="red" stroke-width="1vw" fill="#ff000045" r="6.5vw" cx="7.5vw" cy="7.5vw"/>
+                </svg>
+                <p>Reactjs</p>
+            </div>
         </div>
         <div class="skills-show text-center">
             <div class="company-item">
@@ -104,41 +189,41 @@
                 <hr class="small">
                 <div class="just-text">
                     <p><strong>Desarrollador Back-end</strong> en Mira La Obra.
-                    <br>Desarrollo de Back-end, exposición de servicios REST con Spring (java) apoyado sobre Postgresql</p>
+                        <br>Desarrollo de Back-end, exposición de servicios REST con Spring (java) apoyado sobre Postgresql</p>
+                    </div>
                 </div>
-            </div>
-            <!-- rectangle -->
-        </div>
-        <hr class="row-division">
-        <!-- nested row -->
-        <div class="resume-row">
-        	<div class="workexp-title">
-            	<h3>
-            		<strong>Educación</strong>
-            	</h3>
-        	</div>
-    		<div class="skills-show text-center">
-    			<div class="studies-item">
-            		<div class="company-header">
-                		<h4>
-                			<strong>Universidad de los Andes</strong>
-                		</h4>
-                		<p>2013 - Presente</p>
-            		</div>
-            		<hr class="small">
-            		<div class="just-text">
-            			<p><strong>Ingeniería de Sistemas y Computación</strong>
-            			<br></p>
-            		</div>
-            	</div>
                 <!-- rectangle -->
-    		</div>
-        </div>
-        <!-- nested row -->
-    </section>
+            </div>
+            <hr class="row-division">
+            <!-- nested row -->
+            <div class="resume-row">
+               <div class="workexp-title">
+                   <h3>
+                      <strong>Educación</strong>
+                  </h3>
+              </div>
+              <div class="skills-show text-center">
+                 <div class="studies-item">
+                  <div class="company-header">
+                      <h4>
+                         <strong>Universidad de los Andes</strong>
+                     </h4>
+                     <p>2013 - Presente</p>
+                 </div>
+                 <hr class="small">
+                 <div class="just-text">
+                     <p><strong>Ingeniería de Sistemas y Computación</strong>
+                         <br></p>
+                     </div>
+                 </div>
+                 <!-- rectangle -->
+             </div>
+         </div>
+         <!-- nested row -->
+     </section>
 
-    <!-- Callout -->
-    <aside class="callout">
+     <!-- Callout -->
+     <aside class="callout">
         <div class="text-vertical-center">
             <h1>Proyectos</h1>
         </div>
@@ -155,107 +240,105 @@
                         <div class="col-md-6 padding10">
                             <div class="portfolio-item">
                                 <div class="img-webdesign pintro">
-                                	<div class="p-info">
-										<h2><strong>Acsendo S.A.S</strong></h2>
-										<p>Módulos web para la página web
-											<br> 2017</p>
-                                	</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 padding10">
-                            <div class="portfolio-item">
-                                <div class="img-mywebsite pintro">
-                                	<div class="p-info">
-										<h2><strong>Samuel Baquero</strong></h2>
-										<p>Página personal
-											<br> 2017</p>
-                                	</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
+                                 <div class="p-info">
+                                  <h2><strong>Acsendo S.A.S</strong></h2>
+                                  <p>Módulos web para la página web
+                                     <br> 2017</p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-md-6 padding10">
+                        <div class="portfolio-item">
+                            <div class="img-mywebsite pintro">
+                             <div class="p-info">
+                              <h2><strong>Samuel Baquero</strong></h2>
+                              <p>Página personal
+                                 <br> 2017</p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- /.col-lg-10 -->
+     </div>
+     <!-- /.row -->
+ </div>
+ <!-- /.container -->
+</section>
 
-    <section id="hobbies" class="hobbies text-center">
-        <h2>Hobbies</h2>
-        <hr class="small">
-        <div class="container">
-            <div class="row hob-sc">
-                <div class="hob-row-item">
-                    <div id="1" class="hob-title" onclick='$("#hob-container-1").slideToggle();'><h3>Video Juegos</h3></div>
-                    <div id="hob-container-1" class="hob-container"><h4>En construcción ! :o</h4></div>
-                </div>
-                <div class="hob-row-item">
-                    <div id="2" class="hob-title" onclick='$("#hob-container-2").slideToggle();'><h3>Libros</h3></div>
-                    <div id="hob-container-2" class="hob-container"><h4>En construcción ! :o</h4></div>
-                </div>
-                <div class="hob-row-item">
-                    <div id="3" class="hob-title" onclick='$("#hob-container-3").slideToggle();'><h3>Series</h3></div>
-                    <div id="hob-container-3" class="hob-container"><h4>En construcción ! :o</h4></div>
-                </div>
-                <div class="hob-row-item">
-                    <div id="4" class="hob-title" onclick='$("#hob-container-4").slideToggle();'><h3>Dungeons and Dragons</h3></div>
-                    <div id="hob-container-4" class="hob-container"><h4>En construcción ! :o</h4></div>
-                </div>
+<section id="hobbies" class="hobbies text-center">
+    <h2>Hobbies</h2>
+    <hr class="small">
+    <div class="container">
+        <div class="row hob-sc">
+            <div class="hob-row-item">
+                <div id="1" class="hob-title" onclick='$("#hob-container-1").slideToggle();'><h3>Video Juegos</h3></div>
+                <div id="hob-container-1" class="hob-container"><h4>En construcción ! :o</h4></div>
             </div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div id="contact" class="col-lg-10 mx-auto text-center">
-                    <h4>
-                    	<strong>Contacto</strong>
-                    </h4>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (+57) 318-4315941</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">s.baquero10@uniandes.edu.co</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="https://www.facebook.com/samuel.baquero.3"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://twitter.com/SBaquero10?s=09"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://www.linkedin.com/in/samuel-baquero-merch%C3%A1n-986910134?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BD%2Bakg67vT8OIGXBhh3zOrg%3D%3D"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://steamcommunity.com/id/edahin"><i class="fa fa-steam fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Your Website 2018</p>
-                </div>
+            <div class="hob-row-item">
+                <div id="2" class="hob-title" onclick='$("#hob-container-2").slideToggle();'><h3>Libros</h3></div>
+                <div id="hob-container-2" class="hob-container"><h4>En construcción ! :o</h4></div>
+            </div>
+            <div class="hob-row-item">
+                <div id="3" class="hob-title" onclick='$("#hob-container-3").slideToggle();'><h3>Series</h3></div>
+                <div id="hob-container-3" class="hob-container"><h4>En construcción ! :o</h4></div>
+            </div>
+            <div class="hob-row-item">
+                <div id="4" class="hob-title" onclick='$("#hob-container-4").slideToggle();'><h3>Dungeons and Dragons</h3></div>
+                <div id="hob-container-4" class="hob-container"><h4>En construcción ! :o</h4></div>
             </div>
         </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg page-scroll"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-    </footer>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div id="contact" class="col-lg-10 mx-auto text-center">
+                <h4>
+                 <strong>Contacto</strong>
+             </h4>
+             <ul class="list-unstyled">
+                <li><i class="fa fa-phone fa-fw"></i> (+57) 318-4315941</li>
+                <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">s.baquero10@uniandes.edu.co</a>
+                </li>
+            </ul>
+            <br>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/samuel.baquero.3"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://twitter.com/SBaquero10?s=09"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/samuel-baquero-merch%C3%A1n-986910134?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BD%2Bakg67vT8OIGXBhh3zOrg%3D%3D"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://steamcommunity.com/id/edahin"><i class="fa fa-steam fa-fw fa-3x"></i></a>
+                </li>
+            </ul>
+            <hr class="small">
+            <p class="text-muted">Copyright &copy; Your Website 2018</p>
+        </div>
+    </div>
+</div>
+<a id="to-top" href="#top" class="btn btn-dark btn-lg page-scroll"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+</footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/popper/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/myjs.js"></script>
+<!-- Custom scripts for this template -->
+<script src="js/myjs.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="template/js/stylish-portfolio.js"></script>
 
 </body>
 

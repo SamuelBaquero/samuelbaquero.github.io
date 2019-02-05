@@ -1,0 +1,444 @@
+/* Body */
+body {
+	background-color: #f8f9fa;
+}
+
+/* Images */
+.profile-pick{
+	background-image: url(../img/profile-pic.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: inline-block;
+	height: 200px !important;
+	width: 200px;
+}
+
+.skills-show{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.callout{
+	background-image: url(../img/projectsbg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	opacity: 1;
+	transition: 0.6s ease-in-out;
+}
+
+.callout:hover{
+	opacity: 0.9;
+}
+
+.img-code{
+	background-image: url(../img/blackCode.png);
+	background-size: cover;
+}
+
+.img-hobbies{
+	background-image: url("../img/hobbies.png");
+	background-size: cover;
+}
+
+.img-studies{
+	background-image: url("../img/studies.png");
+	background-size: cover;
+}
+
+.img-mywebsite{
+	background-image: url("../img/myweb.png");
+	background-size: cover;
+}
+
+.img-webdesign{
+	background-image: url("../img/web-design.jpg");
+	background-size: cover;
+}
+
+.img-empty{
+	background-image: url("../img/studies.png");
+	background-size: cover;
+}
+
+/* Header */
+
+.header {
+	display: table;
+	position: relative;
+	width: 100%;
+	height: 10vw;
+	padding: 1vw 4vw;
+}
+
+.header div{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.header h1{
+	font-size: 7vmin;
+	color: #FFF;
+}
+
+.header h3{
+	font-size: 5vmin;
+	color: #FFF;
+	padding:0px !important;
+}
+
+.header div img{
+	width: auto;
+	height: 7vw;
+	min-width: 250px;
+	min-height: 62.08px;
+}
+
+/* Curriculum */
+.text-row{ 
+	margin: 1vw 6vw 1vw 5vw;
+}
+
+/* Box Show */
+.box-show-container{
+	margin: 5vw 6vw 5vw 6vw;
+	display: flex;
+}
+
+.box-show{
+	width: 50%;
+	padding: 2vw 1vw 2vw 1vw;
+}
+
+.interests-box{
+	background-image: linear-gradient(to left, #868e96, #f8f9fa, #f8f9fa); 
+	border-right:solid #868e96;
+	background-size: 150% 150%;
+	border-radius: 50%; 
+}
+
+.interests-box:hover{
+	background-image: linear-gradient(to left, #868e96, #f8f9fa, #f8f9fa);
+	background-position: 95% 0;
+	transition: background-position 0.2s ease-in-out;
+}
+
+.working-box{
+	background-image: linear-gradient(to right, #868e96, #f8f9fa, #f8f9fa);
+	border-left: solid #868e96;
+	background-position: -200% 0;
+	background-size: 150% 150%;
+	border-radius: 50%;
+}
+
+.working-box:hover{
+	background-image: linear-gradient(to right, #868e96, #f8f9fa, #f8f9fa);
+	background-position: -295% 0;
+	transition: background-position 0.2s ease-in-out;
+}
+
+/* Skills Grid */
+.skills-grid-small{
+	font-size: 1.3vw;
+	display: table;
+	margin: 4vw 7vw 4vw 15vw;
+	width: 70vw;
+	grid-gap: 0.2vw;
+	grid-template-columns: repeat(7, [col] 5vw);
+	grid-template-rows: repeat(7, [row] 5vw);
+	height: auto;
+}
+
+.skills-grid-large{
+	display:none;
+}
+
+.item-grid-title{
+	grid-row: 1;
+	grid-column: 1/8;
+}
+
+.item-yellow{
+	color: #464a4e;
+	background-color: #ffff0047;
+	transition: background-color 0.5s, color 0.5s, font-weight 0.5s;
+}
+
+.item-yellow:hover{
+	color:black;
+	background-color: yellow;
+	font-weight:bold;
+}
+
+.item-blue{
+	color: #464a4e;
+	background-color: #002bff47;
+	transition: background-color 0.5s, color 0.5s, font-weight 0.5s;
+}
+
+.item-blue:hover{
+	color:black;
+	background-color: #002bffa3;
+	font-weight:bold;
+}
+
+.item-green{
+	color: #464a4e;
+	background-color:#00ff2b47;
+	transition: background-color 0.5s, color 0.5s, font-weight 0.5s;
+}
+
+.item-green:hover{
+	color:black;
+	background-color: #00ff2bde;
+	font-weight:bold;
+}
+
+.item-red{
+	color: #464a4e;
+	background-color: #ff000045;
+	transition: background-color 0.5s, color 0.5s, font-weight 0.5s;
+}
+
+.item-red:hover{
+	color:black;
+	background-color: #ff0000a6;
+	font-weight:bold;
+}
+
+.big-java{
+	grid-row: 2/4;
+	grid-column: 1/3;
+}
+
+.big-javascript{
+	grid-row: 2/4;
+	grid-column: 6/8;
+}
+
+.big-nosql{
+	grid-row: 6/8;
+	grid-column: 1/3;
+}
+
+.big-sql{
+	grid-row: 6/8;
+	grid-column: 6/8;
+}
+
+.small-spring{
+	grid-row: 3/4;
+	grid-column: 3/4;
+}
+
+.small-meteor{
+	grid-row: 2/3;
+	grid-column: 4/5;
+}
+
+.small-express{
+	grid-row: 4/5;
+	grid-column: 2/3;
+}
+
+.small-html{
+	grid-row: 3/4;
+	grid-column: 5/6;
+}
+
+.small-react{
+	grid-row: 4/5;
+	grid-column: 6/7;
+}
+
+.small-css{
+	grid-row: 4/5;
+	grid-column: 4/5;
+}
+
+.small-postgre{
+	grid-row: 5/6;
+	grid-column: 6/8;
+}
+
+.smal-oracle{
+	grid-row: 6/7;
+	grid-column: 5/6;
+}
+
+.small-mongo{
+	grid-row: 5/6;
+	grid-column: 1/3;
+}
+
+.small-firebase{
+	grid-row: 6/7;
+	grid-column: 3/4;
+}
+
+/*Black Circle Text Styles*/
+.row-title h5{
+	margin-top: 40%;
+	font-size: 1.5rem;
+}
+
+.workexp-title{
+	width: 100%;
+}
+
+/*Company Grid*/
+.company-item{
+	width: 100%;
+	height: 20%;
+	border-top: solid;
+	margin: 5px;
+	padding: 10px;
+}
+
+.studies-item{
+	width:100%;
+	height: 20%;
+	border-top-color: black;
+	border-top: solid;
+	padding: 5px;
+	margin: 10px;
+}
+
+/*Portfolio Grid*/
+.portfolio-item{
+	border-width: 3px;
+	border-color: rgba(0, 123, 255, 1);
+	border-style: solid;
+
+	min-width: 200px;
+	min-height: 200px;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+
+}
+
+
+/*Dynamic squared image content*/
+.portfolio-item:hover .p-info{
+	transform: scale(1);
+	opacity: 0.8;
+	background-color: black;
+}
+
+.p-info{
+	transition: all 0.4s ease-in;
+	transform: scale(0);
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	padding-top: 16%;
+}
+
+.pintro:hover{
+	box-shadow: 
+	inset 0 0 0 1px rgba(255,255,255,0.1),
+	0 1px 2px rgba(0,0,0,0.1);
+	transition: all 0.4s ease-in;
+}
+
+.pintro{
+	background-position: center center;
+	box-shadow: 
+	inset 0 0 0 16px rgba(255,255,255,0.6),
+	0 1px 2px rgba(0,0,0,0.1);
+	transition: all 0.4s ease-in-out;
+	height: 100%;
+	width: 100%;
+}
+
+/*Footer*/
+.footer{
+	background-color: rgb(153, 202, 255);
+	margin-top: -4.6%;
+}
+
+
+/*Utils*/
+.padding10{
+	padding:10px;
+}
+
+.text-box{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.text-box p{
+	margin-bottom: 0px !important;
+}
+
+.navbar-fixed{
+	position:fixed;
+	background-color:black;
+	opacity:0.8;
+	z-index: 100;
+	width: 100%;
+	height: 8%;
+}
+
+.slightly-gray{
+	color: #464a4e;
+}
+
+
+/*Hobbies showcase*/
+.hobbies{
+	background-color: #007bff!important;
+	padding: 5% 0px;
+}
+
+.hobbies h2{
+	color: white;
+}
+
+.hob-sc{
+	padding: 10px;
+	margin-bottom: 5%;
+	height: 100%;
+	width: 100%;
+}
+
+.hob-title{
+	background-color: #007bff!important;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-color: white; 
+}
+
+.hob-title h3{
+	text-align: left;
+	color: white;
+}
+
+.hob-container{
+	display: none;
+	background-color: #076aff!important;
+}
+
+.hob-item{
+	min-height:200px;
+	min-width:200px;
+	height: 100%;
+	width:100%;
+	background-color: #007bff!important;
+}
+
+.hob-row-item{
+	height: 100%;
+	width:100%;
+	background-color: #007bff!important;
+	margin-bottom: 2%;
+}
+
+.flex{
+	display:flex!important;
+}

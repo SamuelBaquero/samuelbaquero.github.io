@@ -1,6 +1,6 @@
 /* Body */
 body {
-	background-color: #f8f9fa;
+	/*background-color: #f8f9fa;*/
 }
 
 /* Images */
@@ -67,9 +67,9 @@ body {
 .header {
 	display: table;
 	position: relative;
-    width: 100%;
-    height: 10vw;
-    padding: 1vw 4vw;
+	width: 100%;
+	height: 10vw;
+	padding: 1vw 4vw;
 }
 
 .header div{
@@ -97,158 +97,149 @@ body {
 
 /* Curriculum */
 .text-row{ 
-	margin: 1vw 0vw 1vw 5vw;
+	margin: 1vw 6vw 1vw 5vw;
+}
+
+/* Box Show */
+.box-show-container{
+	margin: 5vw 6vw 5vw 6vw;
+	display: flex;
+}
+
+.box-show{
+	width: 50%;
+	padding: 2vw 1vw 2vw 1vw;
+}
+
+.interests-box{
+	background-image: linear-gradient(to left, #868e96, #f8f9fa, #f8f9fa); 
+	border-right:solid #868e96;
+	background-size: 150% 150%;
+	border-radius: 50%; 
+}
+
+.working-box{
+	background-image: linear-gradient(to right, #868e96, #f8f9fa, #f8f9fa);
+	border-left: solid #868e96;
+	background-position: -200% 0;
+	background-size: 150% 150%;
+	border-radius: 50%;
+}
+
+/*Progress Circles*/
+.prog-ring{
+	position:absolute;
+}
+
+.prog-circle-tres{
+	stroke-dasharray: 40.84vw 40.84vw;
+  	transform: rotate(-90deg) rotateX( -180deg );
+  	transform-origin: 50% 50%;
+}
+
+.prog-circle-dos{
+	stroke-dasharray: 28.9vw 28.9vw;
+  	transform: rotate(-90deg) rotateX( -180deg );
+  	transform-origin: 50% 50%;
+}
+
+.prog-circle-uno{
+	stroke-dasharray: 14.45vw 14.45vw;
+  	transform: rotate(-90deg) rotateX( -180deg );
+  	transform-origin: 50% 50%;
 }
 
 /* Skills Grid */
-@media only screen and (max-width: 890px) {
-    .display {
-        display: table;
-        margin: 4vw 7vw 4vw 15vw;
-		width: 70vw;
-    }
-}
-
-@media only screen and (min-width: 891px)  {
-    .display {
-		font-size: 1.3vw;
-        display: grid;
-		margin: 2vw 7vw 4vw 33vw;
-		width: 20vw;
-    }
-}
-
-.skills-grid{
+.skills-grid-large{
+	font-size: 1.3vw;
+	display: grid;
+	margin: 2vw 7vw 4vw 18vw;
+	width: 20vw;
 	grid-gap: 0.2vw;
-	grid-template-columns: repeat(7, [col] 5vw);
+	grid-template-columns: repeat(12, [col] 5vw);
 	grid-template-rows: repeat(7, [row] 5vw);
+	height: auto;
 }
 
-.skills{
-	height: auto;
+.skills-grid-small{
+	display:none;
 }
 
 .item-grid-title{
 	grid-row: 1;
-	grid-column: 1/8;
+	grid-column: 1/13;
 }
 
-.item-yellow{
-	color: #464a4e;
-	background-color: #ffff0047;
-	transition: background-color 0.5s, color 0.5s, font-weight 0.5s;
+.tres-java{
+	grid-row: 2/5;
+	grid-column: 1/4;
+	stroke-dashoffset: 4.08vw;
 }
 
-.item-yellow:hover{
-	color:black;
-	background-color: yellow;
-	font-weight:bold;
+.tres-javascript{
+	grid-row: 5/8;
+	grid-column: 1/4;
+	stroke-dashoffset: 2.04vw;
 }
 
-.item-blue{
-	color: #464a4e;
-	background-color: #002bff47;
-	transition: background-color 0.5s, color 0.5s, font-weight 0.5s;
-}
-
-.item-blue:hover{
-	color:black;
-	background-color: #002bffa3;
-	font-weight:bold;
-}
-
-.item-green{
-	color: #464a4e;
-	background-color:#00ff2b47;
-	transition: background-color 0.5s, color 0.5s, font-weight 0.5s;
-}
-
-.item-green:hover{
-	color:black;
-	background-color: #00ff2bde;
-	font-weight:bold;
-}
-
-.item-red{
-	color: #464a4e;
-	background-color: #ff000045;
-	transition: background-color 0.5s, color 0.5s, font-weight 0.5s;
-}
-
-.item-red:hover{
-	color:black;
-	background-color: #ff0000a6;
-	font-weight:bold;
-}
-
-.big-java{
+.dos-mongodb{
 	grid-row: 2/4;
-	grid-column: 1/3;
+	grid-column: 4/6;
+	stroke-dashoffset: 2.04vw;
 }
 
-.big-javascript{
-	grid-row: 2/4;
-	grid-column: 6/8;
-}
-
-.big-nosql{
-	grid-row: 6/8;
-	grid-column: 1/3;
-}
-
-.big-sql{
-	grid-row: 6/8;
-	grid-column: 6/8;
-}
-
-.small-spring{
-	grid-row: 3/4;
-	grid-column: 3/4;
-}
-
-.small-meteor{
-	grid-row: 2/3;
-	grid-column: 4/5;
-}
-
-.small-express{
-	grid-row: 4/5;
-	grid-column: 2/3;
-}
-
-.small-html{
-	grid-row: 3/4;
-	grid-column: 5/6;
-}
-
-.small-react{
-	grid-row: 4/5;
-	grid-column: 6/7;
-}
-
-.small-css{
+.uno-spring{
 	grid-row: 4/5;
 	grid-column: 4/5;
+	stroke-dashoffset: 8vw;
 }
 
-.small-postgre{
-	grid-row: 5/6;
+.dos-html{
+	grid-row: 4/6;
+	grid-column: 5/7;
+	stroke-dashoffset: 1.02vw;
+}
+
+.dos-css{
+	grid-row: 6/8;
+	grid-column: 4/6;
+	stroke-dashoffset: 1.02vw;
+}
+
+.dos-oracle{
+	grid-row: 2/4;
 	grid-column: 6/8;
+	stroke-dashoffset: 8.16vw;
 }
 
-.smal-oracle{
-	grid-row: 6/7;
-	grid-column: 5/6;
+.dos-postgresql{
+	grid-row: 2/4;
+	grid-column: 9/11;
+	stroke-dashoffset: 4.08vw;
 }
 
-.small-mongo{
-	grid-row: 5/6;
-	grid-column: 1/3;
+.dos-meteor{
+	grid-row: 4/6;
+	grid-column: 7/9;
+	stroke-dashoffset: 12.25vw;
 }
 
-.small-firebase{
-	grid-row: 6/7;
-	grid-column: 3/4;
+.tres-react{
+	grid-row: 5/8;
+	grid-column: 10/13;
+	stroke-dashoffset: 4.08vw;
+}
+
+.dos-firebase{
+	grid-row: 6/8;
+	grid-column: 8/10;
+	stroke-dashoffset: 4.08vw;
+}
+
+.dos-express{
+	grid-row: 3/5;
+	grid-column: 11/13;
+	stroke-dashoffset: 8.16vw;
 }
 
 /*Black Circle Text Styles*/
@@ -296,10 +287,10 @@ body {
 	border-style: solid;
 
 	min-width: 200px;
-    min-height: 200px;
-    width: 100%;
-    height: 100%;
-    background-position: center;
+	min-height: 200px;
+	width: 100%;
+	height: 100%;
+	background-position: center;
 	
 }
 
@@ -323,16 +314,16 @@ body {
 
 .pintro:hover{
 	box-shadow: 
-		inset 0 0 0 1px rgba(255,255,255,0.1),
-		0 1px 2px rgba(0,0,0,0.1);
+	inset 0 0 0 1px rgba(255,255,255,0.1),
+	0 1px 2px rgba(0,0,0,0.1);
 	transition: all 0.4s ease-in;
 }
 
 .pintro{
 	background-position: center center;
-    box-shadow: 
-		inset 0 0 0 16px rgba(255,255,255,0.6),
-		0 1px 2px rgba(0,0,0,0.1);
+	box-shadow: 
+	inset 0 0 0 16px rgba(255,255,255,0.6),
+	0 1px 2px rgba(0,0,0,0.1);
 	transition: all 0.4s ease-in-out;
 	height: 100%;
 	width: 100%;
@@ -344,14 +335,6 @@ body {
 	margin-top: -4.6%;
 }
 
-/* Nav Bar */
-$nav-height: 3em;
-.about{
-	position: fixed;
-	top: -($nav-height);
-}
-
-
 /*Utils*/
 .padding10{
 	padding:10px;
@@ -361,6 +344,10 @@ $nav-height: 3em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.text-box p{
+	margin-bottom: 0px !important;
 }
 
 .navbar-fixed{
@@ -375,12 +362,6 @@ $nav-height: 3em;
 .slightly-gray{
 	color: #464a4e;
 }
-
-/*
-.navitem{
-	height:30px !important;
-	width:30px !important;
-}*/
 
 /*Hobbies showcase*/
 .hobbies{
