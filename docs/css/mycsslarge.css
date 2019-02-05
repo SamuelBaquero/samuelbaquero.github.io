@@ -185,43 +185,43 @@ body {
 .dos-mongodb{
 	grid-row: 2/4;
 	grid-column: 4/6;
-	stroke-dashoffset: 2.04vw;
+	stroke-dashoffset: 4.335vw;
 }
 
 .uno-spring{
 	grid-row: 4/5;
 	grid-column: 4/5;
-	stroke-dashoffset: 8vw;
+	stroke-dashoffset: 7.225vw;
 }
 
 .dos-html{
 	grid-row: 4/6;
 	grid-column: 5/7;
-	stroke-dashoffset: 1.02vw;
+	stroke-dashoffset: 1.445vw;
 }
 
 .dos-css{
 	grid-row: 6/8;
 	grid-column: 4/6;
-	stroke-dashoffset: 1.02vw;
+	stroke-dashoffset: 0.7225vw;
 }
 
 .dos-oracle{
 	grid-row: 2/4;
 	grid-column: 6/8;
-	stroke-dashoffset: 8.16vw;
+	stroke-dashoffset: 8.67vw;
 }
 
 .dos-postgresql{
 	grid-row: 2/4;
 	grid-column: 9/11;
-	stroke-dashoffset: 4.08vw;
+	stroke-dashoffset: 4.335vw;
 }
 
 .dos-meteor{
 	grid-row: 4/6;
 	grid-column: 7/9;
-	stroke-dashoffset: 12.25vw;
+	stroke-dashoffset: 4.335vw;
 }
 
 .tres-react{
@@ -233,13 +233,13 @@ body {
 .dos-firebase{
 	grid-row: 6/8;
 	grid-column: 8/10;
-	stroke-dashoffset: 4.08vw;
+	stroke-dashoffset: 13vw;
 }
 
 .dos-express{
 	grid-row: 3/5;
 	grid-column: 11/13;
-	stroke-dashoffset: 8.16vw;
+	stroke-dashoffset: 8.67vw;
 }
 
 /*Black Circle Text Styles*/
